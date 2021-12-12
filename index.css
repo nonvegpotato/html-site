@@ -8,11 +8,7 @@ body {
 	height: 100vh;
 	margin: 0px;
 	background: #cb356b;
-	background: -webkit-linear-gradient(
-		to right,
-		#cb356b,
-		#bd3f32
-	);
+	background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);
 	background: linear-gradient(to right, #cb356b, #bd3f32);
 }
 .child {
@@ -31,7 +27,8 @@ body {
 }
 .nilesh {
 }
-.nilesh, .bharat {
+.nilesh,
+.bharat {
 	align-items: stretch;
 	overflow: hidden;
 }
@@ -47,19 +44,19 @@ body {
 .bhau {
 	height: 100%;
 	padding: 0rem 2rem;
-	color : white;
+	color: white;
 	font-size: 1rem;
 	align-self: start;
 	line-height: 2rem;
 	overflow-y: auto;
 }
 .sagar a {
-	text-decoration : none;
-	font-size : 20px;
-	color: #1A1B1C;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #1a1b1c;
 }
 .sagar a:hover {
-	color : #DC143C
+	color: #dc143c;
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -69,6 +66,9 @@ body {
 	border-radius: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
 	body {
 		grid-template-columns: 100%;
 		grid-template-rows: 15% auto 15%;
@@ -82,12 +82,22 @@ body {
 	.bharat {
 		grid-row: 4/5;
 	}
-	.nilesh, .bharat {
+	.nilesh,
+	.bharat {
 		display: none;
 		align-items: center;
 	}
-	.nilesh img, .bharat img {
+	.nilesh img,
+	.bharat img {
 		align-items: center;
 		width: 100%;
+	}
+	.sagar a {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 0px) and (max-width: 312px) {
+	html {
+		font-size: 12px;
 	}
 }
